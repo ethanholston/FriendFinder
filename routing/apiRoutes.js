@@ -10,7 +10,7 @@ module.exports = function(app) {
     var diffArr = [];
     for(let i=0; i<friends.length; i++){
       var diff=0;
-      for(let j=0; j<friends.answers; j++){
+      for(let j=0; j<friends[i].answers; j++){
         if (req.body.answers > friends[i].answers){
           diff += (req.body.answers - friends[i].answers);
         }
