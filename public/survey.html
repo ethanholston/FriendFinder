@@ -168,8 +168,9 @@
           type: "POST",
           data: newFriend
         }).then(
-          function(){
+          function(res){
             console.log("Friend submitted");
+            alert("Your new best friend is: " + res.name);
           }
         );
       });
